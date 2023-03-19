@@ -1,0 +1,11 @@
+{
+  "name": "@your-monorepo/core",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@your-monorepo/core": "^1.0.0"
+  },
+  "license": "MIT"
+}

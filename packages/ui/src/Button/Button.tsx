@@ -1,17 +1,15 @@
 import React from 'react';
+import { logger } from '@your-monorepo/core';
 
-interface ButtonProps {
-    children: React.ReactNode;
-    onClick?: () => void;
-    type?: 'button' | 'submit' | 'reset';
-}
-  
-const Button: React.FC<ButtonProps> = ({ children, onClick, type = 'button' }) => {
-    return (
-        <button onClick={onClick} type={type}>
-            {children}
-        </button>
-    );
+const Button: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const onClick = () => {
+    logger('Logged');
+  };
+  return (
+    <button type="button" onClick={onClick}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;
