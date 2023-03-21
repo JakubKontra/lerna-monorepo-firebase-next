@@ -1,5 +1,15 @@
-const logger = (...args: any[]): void => {
-  console.log(...args);
+import { createLogger, Logger } from 'browser-bunyan';
+import devLoggerConfig from '@your-monorepo/config/logger/config.dev';
+import prodLoggerConfig from '@your-monorepo/config/logger/config.prod';
+
+const isProduction = process.env.NODE_ENV === 'production';
+const appConfig = isProduction ? prodLoggerConfig : devLoggerConfig;
+
+const loggerFactory = function(name: string, config: Record<string, unknown> = appConfig): Logger {
+  return createLogger({
+    name,
+    config,
+  });
 };
 
-export default logger;
+export default loggerFactory;

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "license": "ISC",
   "dependencies": {
-    "@your-monorepo/core": "^1.0.0"
+    "@your-monorepo/core": "^1.0.0",
+    "@your-monorepo/config": "^1.0.0"
   }
 }

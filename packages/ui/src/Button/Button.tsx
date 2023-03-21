@@ -1,9 +1,12 @@
 import React from 'react';
-import { logger } from '@your-monorepo/core';
+import { loggerFactory } from '@your-monorepo/core';
+
+
+const logger = loggerFactory('@your-monorepo/ui/button');
 
 const Button: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const onClick = () => {
-    logger('Logged');
+    logger.info("clicked")
   };
   return (
     <button type="button" onClick={onClick}>

@@ -1,0 +1,7 @@
+{
+  "name": "@your-monorepo/config",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc"
+  }
+}
