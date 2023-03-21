@@ -6,10 +6,9 @@
   ],
   "language": "typescript",
   "scripts": {
-    "dev": "lerna run dev",
-    "build": "lerna run --parallel build",
+    "app:dev": "lerna run --scope @your-monorepo/frontend dev",
     "app:build": "lerna run --scope={@your-monorepo/frontend} build",
-    "app:start": "lerna run --scope @your-monorepo/frontend start",
+    "app:start": "lerna run --scope={@your-monorepo/frontend} build",
     "prettify": "prettier --write ."
   },
   "devDependencies": {
