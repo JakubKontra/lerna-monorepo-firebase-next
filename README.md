@@ -8,10 +8,11 @@ The monorepo is organized into the following packages:
 
 1. **frontend**: A Next.js web application that consumes components from the UI package.
 2. **ui**: A collection of reusable UI components, built with React and TypeScript.
-2. **core**: A collection of reusable core functions, hooks, etc.
-3. **functions**: Serverless functions using Firebase Functions, providing backend services for the Next.js app.
+3. **core**: A collection of reusable core functions, hooks, etc.
+4. **functions**: Serverless functions using Firebase Functions, providing backend services for the Next.js app.
 
 ## TODO
+
 - [ ] Hygen boiler plate code generator
 - [ ] Testing library
 - [ ] Storybook
