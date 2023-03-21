@@ -8,7 +8,7 @@
   "scripts": {
     "app:dev": "lerna run --scope @your-monorepo/frontend dev",
     "app:build": "lerna run --scope={@your-monorepo/frontend} build",
-    "app:start": "lerna run --scope={@your-monorepo/frontend} build",
+    "app:start": "lerna run --scope={@your-monorepo/frontend} start",
     "prettify": "prettier --write ."
   },
   "devDependencies": {
