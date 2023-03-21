@@ -11,6 +11,12 @@ The monorepo is organized into the following packages:
 2. **core**: A collection of reusable core functions, hooks, etc.
 3. **functions**: Serverless functions using Firebase Functions, providing backend services for the Next.js app.
 
+## TODO
+- [ ] Hygen boiler plate code generator
+- [ ] Testing library
+- [ ] Storybook
+- [ ] i18n cached
+
 ## Getting Started
 
 Follow these steps to set up the monorepo:
