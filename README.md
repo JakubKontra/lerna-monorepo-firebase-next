@@ -41,3 +41,5 @@ cd lerna-monorepo-firebase-next
 ```shell
 npm install -g lerna
 ```
+
+3. Run
